@@ -1,0 +1,21 @@
+/.idea/                  # Настройки PHPStorm
+/.vscode/                # Настройки VS Code
+/.DS_Store               # MacOS
+
+/vendor/
+/node_modules/
+/.env
+/.env.local
+/.env.*.local
+/.cache/
+*.log
+/storage/logs/
+storage/framework/cache/
+storage/framework/sessions/
+storage/framework/views/
+
+/public/uploads/
+public/storage/
+
+
+/.idea/
