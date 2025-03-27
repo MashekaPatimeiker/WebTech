@@ -1,6 +1,6 @@
-/.idea/                  # Настройки PHPStorm
-/.vscode/                # Настройки VS Code
-/.DS_Store               # MacOS
+.idea
+/.vscode/
+/.DS_Store
 
 /vendor/
 /node_modules/
@@ -9,13 +9,13 @@
 /.env.*.local
 /.cache/
 *.log
-/storage/logs/
-storage/framework/cache/
-storage/framework/sessions/
-storage/framework/views/
+/Storage/logs/
+Storage/framework/cache/
+Storage/framework/sessions/
+Storage/framework/views/
 
-/public/uploads/
-public/storage/
+/Public/uploads/
+Public/storage/
 
 
-/.idea/
+.idea

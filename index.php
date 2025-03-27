@@ -1,17 +1,17 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Список игр</title>
-    <link rel="stylesheet" href="public/css/styles.css">
-</head>
-<body>
-<div class="container">
-    <h1>Список игр</h1>
+<?php
 
-    <?php include 'public/php/index.php';?>
-</div>
-<script src="public/js/script.js"></script>
-</body>
-</html>
+spl_autoload_register(function ($class) {
+    $file = __DIR__ . '/' . str_replace('\\', '/', $class) . '.php';
+    if (file_exists($file)) {
+        require $file;
+    }
+});
+include __DIR__ . '/Router/myrouter.php';
+
+use Router\MyRouter;
+use Controller\GameController;
+$router = new MyRouter();
+$router->addRoute('/', [GameController::class, 'showGames']);
+
+$uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+$router->handleRequest($uri);
