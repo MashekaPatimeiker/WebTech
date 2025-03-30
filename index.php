@@ -6,11 +6,11 @@ spl_autoload_register(function ($class) {
         require $file;
     }
 });
-include __DIR__ . '/Router/myrouter.php';
+include __DIR__ . '/router/Router.php';
 
-use Router\MyRouter;
+use Router\Router;
 use Controller\GameController;
-$router = new MyRouter();
+$router = new Router();
 $router->addRoute('/', [GameController::class, 'showGames']);
 
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);

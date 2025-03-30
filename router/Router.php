@@ -2,7 +2,7 @@
 
 namespace Router;
 
-class MyRouter {
+class Router {
     private $routes = [];
 
     public function addRoute($uri, $action) {

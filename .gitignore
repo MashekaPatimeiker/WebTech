@@ -14,8 +14,8 @@ Storage/framework/cache/
 Storage/framework/sessions/
 Storage/framework/views/
 
-/Public/uploads/
-Public/storage/
+/public/uploads/
+public/storage/
 
 
 .idea/

@@ -12,6 +12,6 @@ class GameController {
             "Dark Souls III"
         ];
 
-        include __DIR__ . '/../Views/games.php';
+        include __DIR__ . '/../public/views/Games.php';
     }
 }
