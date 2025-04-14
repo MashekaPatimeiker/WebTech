@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteBase /project/
+RewriteRule ^(.*)$ index.php?request=$1 [QSA,L]
+

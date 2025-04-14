@@ -1,6 +1,6 @@
 <?php
 
-namespace Controller;
+namespace project\Controllers;;
 
 class GameController {
     public function showGames() {

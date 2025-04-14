@@ -1,17 +1,19 @@
 <?php
 
+declare(strict_types=1);
 spl_autoload_register(function ($class) {
-    $file = __DIR__ . '/' . str_replace('\\', '/', $class) . '.php';
+    $file = dirname(__DIR__) . '/' . str_replace('\\', '/', $class) . '.php';
     if (file_exists($file)) {
-        require $file;
+        require_once $file;
+    } else {
+        die("Файл для класса {$class} не найден: {$file}");
     }
 });
+use project\Routers\Router;
+
 include __DIR__ . '/router/Router.php';
 
-use Router\Router;
-use Controller\GameController;
-$router = new Router();
-$router->addRoute('/', [GameController::class, 'showGames']);
+$requestUri = isset($_SERVER['REQUEST_URI']) ? parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH) : null;
 
-$uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-$router->handleRequest($uri);
+$router = new Router();
+$router->route($requestUri);

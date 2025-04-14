@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e4d9664d-eefd-4cd1-92e9-413415aa15c4" name="Changes" comment="Fix second lab by Mihalkov">
+      <change afterPath="$PROJECT_DIR$/admin/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/GameController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/admin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Storage/logs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Game.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/Games.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repositories/OrderRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repositories/UserRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/router/Router.php" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/phpmyadmin/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php">
+    <include_path>
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/google/recaptcha" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/bacon/bacon-qr-code" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/williamdes/mariadb-mysql-kbs" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/web-auth/webauthn-lib" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/league/uri-interfaces" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/web-auth/metadata-service" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/league/uri" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/web-auth/cose-lib" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/slim/psr7" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/spomky-labs/cbor-php" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/spomky-labs/base64url" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/paragonie/sodium_compat" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/paragonie/constant_time_encoding" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/symfony/cache" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/composer" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/beberlei/assert" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/symfony/polyfill-php81" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/symfony/expression-language" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/symfony/cache-contracts" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/symfony/var-exporter" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/fig/http-message-util" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/code-lts/u2f-php-server" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/phpmyadmin/motranslator" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/phpmyadmin/twig-i18n-extension" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/phpmyadmin/sql-parser" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/phpmyadmin/shapefile" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/thecodingmachine/safe" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/dasprid/enum" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/nikic/fast-route" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/pragmarx/google2fa-qrcode" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/pragmarx/google2fa" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/tecnickcom/tcpdf" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/fgrosse/phpasn1" />
+    </include_path>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2urEi5HVFFMZa0yktwbkr9N3nnc" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.best.php.executor&quot;: &quot;Run&quot;,
+    &quot;PHP Script.best.php.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;new-branch-name&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/var/www&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-PS-243.24978.50" />
+        <option value="bundled-php-predefined-a98d8de5180a-fbeb0b58ac0f-com.jetbrains.php.sharedIndexes-PS-243.24978.50" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="StructureViewState">
+    <option name="selectedTab" value="PHP" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e4d9664d-eefd-4cd1-92e9-413415aa15c4" name="Changes" comment="" />
+      <created>1740913423649</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1740913423649</updated>
+      <workItem from="1740913425316" duration="1241000" />
+      <workItem from="1742998431458" duration="2145000" />
+      <workItem from="1743006786431" duration="8965000" />
+      <workItem from="1743032557167" duration="313000" />
+      <workItem from="1743057164958" duration="1816000" />
+      <workItem from="1743271052792" duration="627000" />
+      <workItem from="1743331819912" duration="2316000" />
+      <workItem from="1744141474056" duration="4204000" />
+      <workItem from="1744567974510" duration="1194000" />
+      <workItem from="1744617641295" duration="349000" />
+    </task>
+    <task id="LOCAL-00001" summary="Fix second lab by Mihalkov">
+      <option name="closed" value="true" />
+      <created>1743335851097</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1743335851097</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fix second lab by Mihalkov" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix second lab by Mihalkov" />
+  </component>
+</project>
