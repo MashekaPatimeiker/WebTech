@@ -1,7 +1,0 @@
-
-AuthType Basic
-AuthName "Restricted Files"
-# (Following line optional)
-AuthBasicProvider file
-AuthUserFile "..\..\webdata\conf\password"
-Require user dara

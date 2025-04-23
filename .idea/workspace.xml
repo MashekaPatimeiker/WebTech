@@ -4,23 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4d9664d-eefd-4cd1-92e9-413415aa15c4" name="Changes" comment="Fix second lab by Mihalkov">
-      <change afterPath="$PROJECT_DIR$/admin/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/GameController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/admin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Storage/logs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Game.php" beforeDir="false" />
+    <list default="true" id="e4d9664d-eefd-4cd1-92e9-413415aa15c4" name="Changes" comment="3 lab com">
+      <change afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TemplateEngine.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/AdminController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/public/admin/assets/admin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/public/admin/assets/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/public/admin/filemanager/filemanager.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/public/admin/filemanager/view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/public/admin/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/public/css/admin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/public/views/admin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/router/Router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/AdminController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/GameController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/GameController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Storage/logs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Storage/logs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/admin/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/html/file_manager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Game.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Game.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/views/Games.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repositories/OrderRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repositories/UserRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/Games.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/views/Games.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/views/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repositories/OrderRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/OrderRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repositories/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/UserRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/router/AdminRouter.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/router/Router.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/AdminService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/AdminService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/MyTemplate.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +52,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/public/admin/.htaccess" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/public/admin/assets/admin.css" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/public/admin/filemanager/filemanager.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/public/admin/filemanager/view.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/public/admin/index.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/public/views/admin.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php">
     <include_path>
@@ -110,7 +137,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;new-branch-name&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/var/www&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/var/www/public/admin&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -124,10 +151,16 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/admin" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/public/views" />
+      <recent name="$PROJECT_DIR$/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/config" />
+      <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -159,6 +192,9 @@
       <workItem from="1744141474056" duration="4204000" />
       <workItem from="1744567974510" duration="1194000" />
       <workItem from="1744617641295" duration="349000" />
+      <workItem from="1744620866415" duration="230000" />
+      <workItem from="1745424935321" duration="14360000" />
+      <workItem from="1745439357754" duration="201000" />
     </task>
     <task id="LOCAL-00001" summary="Fix second lab by Mihalkov">
       <option name="closed" value="true" />
@@ -168,7 +204,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743335851097</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="3 lab com">
+      <option name="closed" value="true" />
+      <created>1744620932942</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1744620932942</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,6 +231,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fix second lab by Mihalkov" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix second lab by Mihalkov" />
+    <MESSAGE value="3 lab com" />
+    <option name="LAST_COMMIT_MESSAGE" value="3 lab com" />
   </component>
 </project>
