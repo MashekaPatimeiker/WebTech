@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4d9664d-eefd-4cd1-92e9-413415aa15c4" name="Changes" comment="3 lab com">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-    </list>
+    <list default="true" id="e4d9664d-eefd-4cd1-92e9-413415aa15c4" name="Changes" comment="3 lab com" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -162,7 +160,7 @@
       <workItem from="1744617641295" duration="349000" />
       <workItem from="1744620866415" duration="230000" />
       <workItem from="1745424935321" duration="14360000" />
-      <workItem from="1745439357754" duration="1337000" />
+      <workItem from="1745439357754" duration="1505000" />
     </task>
     <task id="LOCAL-00001" summary="Fix second lab by Mihalkov">
       <option name="closed" value="true" />
@@ -204,7 +202,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745440601718</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="3 lab com">
+      <option name="closed" value="true" />
+      <created>1745440702857</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1745440702857</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

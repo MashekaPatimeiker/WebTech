@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Файловый менеджер</title>
-    <link rel="stylesheet" href="/src/public/admin/assets/admin.css">
+    <title>Менеджер файлов</title>
+    <link rel="stylesheet" href="/src/public/css/admin.css">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 <div id="file-manager-container">
     <header class="header">
-        <h1>📁 Файловый менеджер</h1>
+        <h1>📁Менеджер файлов</h1>
         <p class="current-path"><?= htmlspecialchars($requestedPath ?? '/') ?></p>
     </header>
 

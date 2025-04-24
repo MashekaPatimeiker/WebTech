@@ -18,7 +18,6 @@ class Router
     {
         $this->routes = [
             '/admin' => [AdminController::class, 'index'],
-            '/admin/action' => [AdminController::class, 'handleAction'],
             '/test-auth' => [AdminController::class, 'testAuth'],
             '/' => [GameController::class, 'showGames'],
         ];
@@ -29,23 +28,14 @@ class Router
         $uri = $this->getCurrentUri();
         error_log("Trying to route: " . $uri);
         error_log("Available routes: " . print_r(array_keys($this->routes), true));
-        try {
-            $uri = $this->getCurrentUri();
-
-            if (isset($this->routes[$uri])) {
-                [$controllerClass, $method] = $this->routes[$uri];
-
-                if (!class_exists($controllerClass)) {
-                    throw new \RuntimeException("Controller class {$controllerClass} not found");
-                }
-
-                $controller = new $controllerClass();
-                $controller->$method();
-            } else {
-                $this->notFoundResponse($uri);
+        $uri = $this->getCurrentUri();
+        if (isset($this->routes[$uri])) {
+            [$controllerClass, $method] = $this->routes[$uri];
+            if (!class_exists($controllerClass)) {
+                throw new \RuntimeException("Controller class {$controllerClass} not found");
             }
-        } catch (\Throwable $e) {
-            $this->errorResponse($e);
+            $controller = new $controllerClass();
+            $controller->$method();
         }
     }
 
@@ -62,28 +52,5 @@ class Router
 
         error_log("Final URI: {$uri}");
         return $uri;
-    }
-    private function normalizePath(string $path): string
-    {
-        $path = '/' . ltrim($path, '/');
-        return rtrim($path, '/') ?: '/';
-    }
-
-    private function notFoundResponse(string $uri): void
-    {
-        header("HTTP/1.0 404 Not Found");
-        echo "404 Page Not Found. URI: " . htmlspecialchars($uri, ENT_QUOTES, 'UTF-8');
-        exit;
-    }
-
-    private function errorResponse(\Throwable $e): void
-    {
-        error_log('Router error: ' . $e->getMessage() . "\n" . $e->getTraceAsString());
-        header("HTTP/1.1 500 Internal Server Error");
-        echo "500 Internal Server Error";
-        if (ini_get('display_errors')) {
-            echo ": " . htmlspecialchars($e->getMessage(), ENT_QUOTES, 'UTF-8');
-        }
-        exit;
     }
 }
