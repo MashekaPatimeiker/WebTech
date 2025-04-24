@@ -18,6 +18,7 @@ class Router
     {
         $this->routes = [
             '/admin' => [AdminController::class, 'index'],
+            '/admin/action' => [AdminController::class, 'handleAction'],
             '/test-auth' => [AdminController::class, 'testAuth'],
             '/' => [GameController::class, 'showGames'],
         ];
