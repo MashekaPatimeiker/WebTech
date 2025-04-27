@@ -1,5 +1,0 @@
-AuthType Basic
-AuthName "Restricted Files"
-AuthBasicProvider file
-AuthUserFile "/var/www/.htpasswd"
-Require user admin

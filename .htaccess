@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteBase /
+
+# Редирект /admin на /admin/files (обрабатывается роутером)
+RewriteRule ^admin/?$ [R=302,L]
+
+# Главный редирект на index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [L,QSA]
