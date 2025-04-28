@@ -1,5 +1,5 @@
 <?php
-
+declare(strict_types=1);
 namespace MyGameSite\Controller;
 
 use MyGameSite\Services\TemplateEngine;
