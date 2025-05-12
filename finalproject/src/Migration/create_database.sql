@@ -1,8 +1,6 @@
--- Создание базы данных
 CREATE DATABASE IF NOT EXISTS game_site;
 USE game_site;
 
--- Таблица пользователей
 CREATE TABLE users (
                        id INT AUTO_INCREMENT PRIMARY KEY,
                        username VARCHAR(50) NOT NULL UNIQUE,
@@ -12,14 +10,12 @@ CREATE TABLE users (
                        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB;
 
--- Таблица жанров
 CREATE TABLE genres (
                         id INT AUTO_INCREMENT PRIMARY KEY,
                         name VARCHAR(50) NOT NULL UNIQUE,
                         description TEXT
 ) ENGINE=InnoDB;
 
--- Таблица игр
 CREATE TABLE games (
                        id INT AUTO_INCREMENT PRIMARY KEY,
                        name VARCHAR(100) NOT NULL,
@@ -31,7 +27,6 @@ CREATE TABLE games (
                        updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB;
 
--- Связующая таблица для жанров игр
 CREATE TABLE game_genres (
                              game_id INT NOT NULL,
                              genre_id INT NOT NULL,
@@ -40,12 +35,10 @@ CREATE TABLE game_genres (
                              FOREIGN KEY (genre_id) REFERENCES genres(id) ON DELETE CASCADE
 ) ENGINE=InnoDB;
 
--- Создание индексов
 CREATE INDEX idx_games_name ON games(name);
 CREATE INDEX idx_games_rating ON games(rating);
 CREATE INDEX idx_games_release_year ON games(release_year);
 
--- Заполнение начальными данными
 INSERT INTO genres (name, description) VALUES
                                            ('Action', 'Games focused on physical challenges, including hand-eye coordination and reaction time.'),
                                            ('Adventure', 'Games that emphasize exploration, puzzle-solving, and narrative.'),
@@ -71,7 +64,6 @@ INSERT INTO games (name, description, release_year, rating, image_url) VALUES
                                                                            ('Cyberpunk 2077', 'Ролевой экшен в открытом мире, действие которого происходит в будущем.', 2020, 7.5, 'https://upload.wikimedia.org/wikipedia/en/0/0e/Cyberpunk_2077_cover.jpg'),
                                                                            ('Ghost of Tsushima', 'Приключенческая игра с открытым миром, действие которой происходит в Японии во время монгольского вторжения.', 2020, 9.7, 'https://upload.wikimedia.org/wikipedia/en/3/3e/Ghost_of_Tsushima_cover.jpg');
 
--- Добавление жанров к играм
 INSERT INTO game_genres (game_id, genre_id) VALUES
                                                 (1, 1), (1, 2), (1, 3), (1, 4),
                                                 (2, 1), (2, 2), (2, 6),
@@ -89,6 +81,5 @@ INSERT INTO game_genres (game_id, genre_id) VALUES
                                                 (14, 1), (14, 3), (14, 4),
                                                 (15, 1), (15, 2), (15, 4);
 
--- Создание пользователя администратора
 INSERT INTO users (username, email, password_hash, role) VALUES
     ('admin', 'admin@gamesite.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'admin');

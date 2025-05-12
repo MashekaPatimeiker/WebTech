@@ -34,11 +34,4 @@ class User
     public function getEmail(): string { return $this->email; }
     public function getPasswordHash(): string { return $this->passwordHash; }
     public function getRole(): string { return $this->role; }
-    public function getCreatedAt(): string { return $this->createdAt; }
-
-    // Сеттеры
-    public function setUsername(string $username): void { $this->username = $username; }
-    public function setEmail(string $email): void { $this->email = $email; }
-    public function setPasswordHash(string $passwordHash): void { $this->passwordHash = $passwordHash; }
-    public function setRole(string $role): void { $this->role = $role; }
 }

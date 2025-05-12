@@ -68,7 +68,6 @@ class GameRepository
             $row['image_url']
         );
 
-        // Получаем жанры для игры
         $genres = $this->findGenresForGame($game->getId());
         $game->setGenres($genres);
         return $game;
